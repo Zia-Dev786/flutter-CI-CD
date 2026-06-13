@@ -19,15 +19,15 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.10.7"
+          flutter-version: "3.41.4"
 
       # 3️⃣ Install dependencies
       - name: Install dependencies
         run: flutter pub get
 
       # 4️⃣ Analyze project source
-      # - name: Run Flutter analyze
-      #   run: flutter analyze
+      - name: Run Flutter analyze
+        run: flutter analyze
 
       # # 5️⃣ Run tests
       # - name: Run tests
